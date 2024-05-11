@@ -9,14 +9,15 @@
   justify-items: center;
   justify-content: space-around;
   width: auto;
-  height: 77px;
+  height: 70px;
 }
 
 .navbar {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  width: 1400px;
-  height: 77px;
+  width: auto;
+  height: 70px;
   flex-shrink: 0;
   background: var(--White-Color, #fff);
 }
@@ -29,7 +30,8 @@
 
 .flex-container {
   display: flex;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .lang-container {
@@ -37,30 +39,19 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 32px;
-  width: 51px;
-  height: 20px;
-  flex-shrink: 0;
-  border-top: 28;
-  border-right: 258;
-  border-bottom: 29;
-  border-left: 1091;
+  padding-left: 34px;
+  width: auto;
 }
 
 .lang-txt {
-  flex-wrap: wrap;
-  padding-left: 8px;
+  padding-left: 5px;
   color: var(--Black-Color, #282a2e);
   font-family: Poppins;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 143%; /* 20.02px */
+  font-weight: 900;
 }
 
 .flag {
-  flex-wrap: wrap;
-  border: 4px 38px 3px 0px;
   width: 13px;
   height: 13px;
   flex-shrink: 0;
@@ -69,55 +60,28 @@
 }
 
 .polygon {
-  flex-wrap: wrap;
-  padding-left: 6px;
-  border: 8px 0px 7px 44px;
-  width: 7px;
-  height: 5px;
+  padding-left: 5px;
   flex-shrink: 0;
-  fill: var(--Black-Color, #282a2e);
 }
 
 li {
-  display: flex;
-  margin-top: 28px;
-  margin-bottom: 28px;
-}
-
-.line {
-  display: flex;
-  flex-wrap: wrap;
-  z-index: 1;
-  position: absolute;
-  margin-top: 0px;
-  margin-bottom: 75px;
-  width: 45px;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    #709dff 0%,
-    rgba(18, 93, 255, 0.91) 116.85%,
-    #4e86ff 116.86%
-  );
+  list-style: none;
 }
 
 .ullocation {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-top: 24px; */
 }
 
 .logolocation {
-  margin-top: 24px;
-  margin-bottom: 25px;
   margin-left: 123px;
   margin-right: 428px;
 }
 
 .linklocation {
   display: flex;
-  margin-top: 24px;
-  margin-bottom: 25px;
   border-left: 637px;
   border-right: 341px;
 }
@@ -126,22 +90,27 @@ li {
   padding-left: 34px;
 }
 
-nav ul li a.link {
+a {
   color: var(--Black-Color, #282a2e);
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 900;
   line-height: normal;
   letter-spacing: 0.7px;
   text-decoration: none;
 }
 
-nav ul li a.active {
+.active,
+a:hover {
+  text-decoration: none;
+  border-top: 2px solid #4e86ff;
+  color: #4e86ff;
+  padding-top: 22px;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   line-height: normal;
   letter-spacing: 0.7px;
   background: var(
@@ -156,19 +125,6 @@ nav ul li a.active {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-nav ul li a:hover {
-  border-top: 2px solid
-    var(
-      --Theme-Color,
-      linear-gradient(
-        90deg,
-        #709dff 0%,
-        rgba(18, 93, 255, 0.91) 116.85%,
-        #4e86ff 116.86%
-      )
-    );
 }
 
 .btn-shed {
@@ -248,9 +204,8 @@ footer {
   justify-content: space-around;
 }
 .footer {
-  display: flex;
-  width: 1400px;
-  height: 497px;
+  width: auto;
+  height: 505px;
   flex-shrink: 0;
   background: var(--Black-Color, #282a2e);
 }
@@ -281,7 +236,6 @@ footer {
 }
 
 /* border: 3px solid green; */
-
 .footerwidget4 {
   position: absolute;
   margin: 86px 115px 247px 915px;
@@ -351,7 +305,7 @@ footer {
   height: 104px;
   flex-shrink: 0;
   color: #fff;
-  font-family: Rubik;
+  font-family: popins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -360,7 +314,6 @@ footer {
 
 .p2 {
   display: flex;
-
   width: 126px;
   height: 45px;
   flex-shrink: 0;
@@ -460,10 +413,6 @@ footer {
   height: 20.916px;
   flex-shrink: 0;
 }
-
-/* ##############
-
-                  ######## */
 
 .maincontainer {
   display: flex;
@@ -860,9 +809,7 @@ footer {
   background: url(/images/image2.png), lightgray 50% / cover no-repeat;
 }
 
-
 /* ######## */
-
 
 .text {
   font-family: Poppins;
@@ -897,7 +844,6 @@ footer {
   flex-shrink: 0;
 }
 /* ######## */
-
 
 .text {
   font-family: Poppins;
@@ -934,7 +880,6 @@ footer {
 }
 /* ######## */
 
-
 .text {
   font-family: Poppins;
   font-size: 28px;
@@ -969,22 +914,18 @@ footer {
   flex-shrink: 0;
 }
 
-
-
-.arrowtext{
+.arrowtext {
   z-index: 3;
   scale: 1.7;
   display: flex;
   position: absolute;
   margin: 41.4px 76.47px 92.4px 55.47px;
   width: 156px;
-height: 156px;
-flex-shrink: 0;
-
-
+  height: 156px;
+  flex-shrink: 0;
 }
 
-.badgecontainer{
+.badgecontainer {
   z-index: 3;
   display: flex;
   position: absolute;
